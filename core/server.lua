@@ -33,7 +33,7 @@ AddEventHandler('ptFxEvent', function(source, data)
         for _, blacklistedHash in ipairs(Config.backlisthash) do
             if hashpaticle == blacklistedHash then
                 pcall(function()
-                    Config_function.backlistfound(v)
+                    Config_function.backlistfound()
                 end)
                 break
             end
